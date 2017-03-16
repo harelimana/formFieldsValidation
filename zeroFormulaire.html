@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html>
+    <head>
+        <title>Form with check fields errors</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../PLUGINS/css/zeroForm.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>
+            <form id="myForm">
+                <span class="form_col">Sexe :</span>
+                <label><input name="sex" type="radio" value="H" />Homme</label>
+                <label><input name="sex" type="radio" value="F" />Femme</label>
+                <span class="errortool">Gender required</span>
+                <br /><br />
+                <label class="form_col" for="lastName">Nom :</label>
+                <input name="lastName" id="lastName" type="text" />
+                <span class="errortool">Not less then 2 char are allowed</span>
+                <br /><br />
+               
+                <label class="form_col" for="firstName">Prénom :</label>
+                <input name="firstName" id="firstName" type="text" />
+                <span class="errortool">Not less then 2 char are allowed</span>
+                <br /><br />
+                
+                <label class="form_col" for="email">Email :</label>
+                <input name="email" id="email" type="email" />
+                <span class="errortool">Only this format is allowed : xxx.yyy@www.zzz</span>
+                <br /><br />
+                
+                <label class="form_col" for="dateNaissance">Birth date :</label>
+                <input name="dateNaissance" id="dateNaissance" type="date" />
+                <span class="errortool">dd/mm/YYYY</span>
+                <br /><br />
+                <label class="form_col" for="login">Pseudo :</label>
+                <input name="login" id="login" type="text" />
+                <span class="errortool">Not less then 4 char are allowed</span>
+                <br /><br />
+                <label class="form_col" for="pwd1">Password :</label>
+                <input name="pwd1" id="pwd1" type="password" />
+                <span class="errortool">Minimum 6 chars are allowed</span>
+                <br /><br />
+                <label class="form_col" for="pwd2">Password (confirmation) :</label>
+                <input name="pwd2" id="pwd2" type="password" />
+                <span class="errortool">The same password as previously</span>
+                <br /><br />
+                <label class="form_col" for="country">Pays :</label>
+                <select name="country" id="country">
+                    <option value="none">Votre pays de
+                        prevenance</option>
+                    <option value="en">United Kingdom</option>
+                    <option value="us">United States</option>
+                    <option value="fr">France</option>
+                    <option value="it">Italy</option>
+                    <option value="gy">Germany</option>
+                    <option value="nl">Netherlands</option>
+                    <option value="be">Belgium</option>
+                </select>
+                <span class="errortool">Vous devez sélectionner votre pays de résidence</span>
+                <br /><br />
+                <span class="form_col"></span>
+                <label><input name="news" type="checkbox" /> Je désire recevoir la newsletter chaque mois.</label>
+                <br /><br />
+                <span class="form_col"></span>
+                <input class="btn-default" type="submit" value="M'inscrire" /> 
+                <input class="btn-default" type="reset" value="Réinitialiser le formulaire" />
+            </form>
+        </div>
+        <script src="js/zeroForm.js" type="text/javascript"></script>
+    </body>
+</html>
+
+<!-- =============================== -->
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulaires</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/mainFormulaire.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>
+            <form id="formulaire" onsubmit="return checkForm();">
+                <p>
+                    <label for="nom">Nom</label>
+                    <input class="field" placeholder="votre nom" id="nom" name="nom" type="text"/><span class="errorName">Invalid Name</span>
+                </p>
+                <p>
+                    <label for="prenom">Prénom</label>
+                    <input class="field" placeholder="votre prenom" id="prenom" name="prenom" type="text"/><span  class="errorSurname">Invalid SurName</span>
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input class="field" placeholder="votre email" id="email" name="email" type="email"/>
+                </p>
+                <p>
+                    <label for="date_naissance">date_naissance</label>
+                    <input class="field" id="date_naissance" name="date_naissance" type="date"/>
+                </p>
+                <p>                
+                    <input class="field" id="submit" name="submit" type="submit" value="Valider"/>
+                </p>
+            </form>
+            <script src="js/mainFormulaire.js" type="text/javascript"></script>
+        </div>
+    </body>
+</html>
